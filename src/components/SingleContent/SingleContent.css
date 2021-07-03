@@ -1,0 +1,44 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    transition: ease-in;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    /* font-weight: 400; */
+    cursor: pointer;
+}
+
+.media:hover {
+    z-index: 50;
+    transform: scale(1.05);
+}
+
+@media (max-width: 550px) {
+    .media {
+        width: 46%;
+    }
+}
+
+.poster {
+    border-radius: 15px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 8px 0;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3px;
+    padding: 0 2px;
+    padding-bottom: 3px;
+}
