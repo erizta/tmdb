@@ -134,15 +134,9 @@ export default function TransitionsModal({ children, media_type, id }) {
                                     {content.tagline && (
                                         <i className="tagline">{content.tagline}</i>
                                     )}
-
                                     <span className="ContentModal__description">
                                         {content.overview}
                                     </span>
-
-                                    <div>
-                                        <Carousel id={id} media_type={media_type} />
-                                    </div>
-
                                     <Button
                                         variant="contained"
                                         startIcon={<YouTubeIcon />}
@@ -150,8 +144,11 @@ export default function TransitionsModal({ children, media_type, id }) {
                                         target="__blank"
                                         href={`https://www.youtube.com/watch?v=${video}`}
                                     >
-                                       Play Clip
+                                        Play Clip
                                     </Button>
+                                    <div>
+                                        <Carousel id={id} media_type={media_type} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
